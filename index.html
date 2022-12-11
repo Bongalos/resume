@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=devices-width, initial-scale=1.0">
+    <title>Personal Website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/42bde6f865.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Data Analyst</p>
+        <h1>Hi, I'm <span>Arnel Bongalos</span><br>From Simaya, Malaybalay City</h1>
+      </div>
+    </div>
+  </div>
+  <!-- -----------about----------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+       <div class="about-col-1">
+        <img src="images/user.png">
+       </div>
+       <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>Hi there! My name is Arnel M. Bongalos Jr. Currently living in Simaya, Malaybalay City, Province of Bukidnon. An honest, 
+          dedicated and willing to work in any field/department in your company that fits on my skills. I have skills in Computer, Communication,
+          Leadership, Organizational, Customer Service, Collaboration, and Problem-Solving Skills. I'm looking forward to be part in your company
+          so that I can use my skills to bring some improvement in your company.
+        </p>
+
+           <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+           </div>
+          <div class="tab-contents active-tab" id="skills">
+           <ul>
+            <li><span>SQL</span><br>Spreadsheets and computing tool capable of handling large sets of data 
+            and processing information much more quickly than more common spreadsheet software.</li>
+            <li><span>Data Visualization</span><br>Share findings with the company.</li>
+            <li><span>Data Warehousing</span><br>Process of creating virtual storage and organization systems for a company's data.</li>
+           </ul>
+       </div>
+       <div class="tab-contents" id="experience"> 
+        <ul>
+         <li><span>2032 - 2035</span><br>Transportation and Logistics</li>
+         <li><span>2028 - 2031</span><br>HR Analytics</li>
+        
+        </ul >
+    </div>
+    <div class="tab-contents" id="education">
+      <ul>
+       <li><span>2026</span><br>BSIT from Bukidnon State University</li>
+       <li><span>2022</span><br>HUMSS Graduate from Bangcud National High School</li>
+       <li><span>2015</span><br>Simaya Intergrated School</li>
+      </ul>
+  </div>
+      </div>
+    </div>
+  </div>
+  <!-- -----------services------------ -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title"> My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-coins"></i>
+          <h2>Financial Analytics</h2>
+          <p>
+           Monitoring revenue, expenses and profitability of a company.</p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-magnifying-glass-chart"></i>
+          <h2>Sales and Product Analytics</h2>
+          <p>Pricing analytics to design pricing strategies.
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-business-time"></i>
+          <h2>Asset Analytics</h2>
+          <p>Predictive and preventive maintenance, developing asset maintenance strategies.</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- ---------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title"> My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/work-1.png">
+          <div class="layer">
+            <h3>Business Intelligence Analyst</h3>
+            <p>Primary job is to extract value from companyies data.
+              <br> Call me Now!</p>
+              <a href="#"><i class="fa-sharp fa-solid fa-phone"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-2.png">
+          <div class="layer">
+            <h3>Data Scientist</h3>
+            <p>Collect and analyze data and then communicate actionable insights.
+              <br> Call me Now!</p>
+              <a href="#"><i class="fa-sharp fa-solid fa-phone"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="images/work-3.png">
+          <div class="layer">
+            <h3>Data Analytics Consultant</h3>
+            <p>Deliver insights to a company to make better decisions.
+              <br> Call me Now!</p>
+              <a href="#"><i class="fa-sharp fa-solid fa-phone"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- -------------contact---------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i>arnelbongalos08@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i>+63 965 209 1276</p>
+        <div class="social-icons">
+        <a href="https://facebook.com/arnel.bongalos.52?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/arnel_bongalos/"><i class="fab fa-instagram"></i></a>
+      </div>
+      <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyrigth © Reynante Baldivino. Made with <i class="fas fa-heart"></i> by Easy Tuturials</p>
+  </div>
+</div>
+
+  
+  <script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+   
+    function opentab(tabname){
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+  </script>
+
+  <script>
+
+    var sidemenu= document.getElementById("sidemenu");
+
+    function openmenu(){
+      sidemenu.style.right = "0";
+    }
+    function closemenu(){
+      sidemenu.style.right = "-200px";
+    }
+
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzVkQR1dgyD8OXDqx3Z-3eF1bmez_2hpUg3hmq0ApIR5RA_5N3uB5yz7OZmW6pgfVlWxw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML = "Message sent successfully"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
